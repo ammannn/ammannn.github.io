@@ -17,6 +17,7 @@ body{
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
 	display: inline-block;
+	animation-name: fadeIn;
 }
 .upper-container{
 	height: 278px;
@@ -63,16 +64,15 @@ width: 228px;
 height: 46px;
 left: 56px;
 top: 89px;
-
 font-family: DM Sans;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 23px;
 /* or 128% */
-
-
 color: #FFFFFF;
+
+
 }
 
 
@@ -86,7 +86,9 @@ color: #FFFFFF;
 	background: linear-gradient(180deg, #FF7600 0%, #FF5C00 100%);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
+
 }
+
 
 
 
@@ -97,7 +99,8 @@ color: #FFFFFF;
     top: 6.09%;
     bottom: 66.14%;
     width: 50px;
-    height: 50px;
+	height: 50px;
+	
 }
 .lower-container{
 	position: absolute;
@@ -105,14 +108,12 @@ color: #FFFFFF;
 	height: 400px;
 	left: 13px;
 	top: 199px;
-	
 	background: #FFFFFF;
 	border: 1px solid #E4E4E4;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
 	border-radius: 8px;
-
-
+	animation: fadeIn 5s;
 	
 }
 .hello{
@@ -124,7 +125,7 @@ color: #FFFFFF;
 }
 .lower-container h1{
 	position: absolute;
-width: 191px;
+width: 200ox;
 height: 18px;
 left: 26px;
 top: 42px;
@@ -144,12 +145,15 @@ width: 339px;
 height: 50px;
 left: 26px;
 top: 80px;
-
 background: #FFFFFF;
 border: 1px solid #E1E1E1;
 box-sizing: border-box;
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
+animation: fadeIn 20s;
+
+
+
 }
 
 .box1 h1{
@@ -158,35 +162,19 @@ width: 264px;
 height: 21px;
 left: 36px;
 top: 6px;
-
 font-family: DM Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 21px;
+
 /* identical to box height, or 175% */
 
 
 color: #2D2D2D;
 }
 
-}
 
-.box1 h1{
-	position: absolute;
-width: 264px;
-height: 21px;
-left: 38px;
-top: 6px;
-
-font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 21px;
-/* identical to box height, or 175% */
-color: #2D2D2D;
-}
 
 
 
@@ -202,6 +190,9 @@ border: 1px solid #E1E1E1;
 box-sizing: border-box;
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
+animation: fadeIn 40s ;
+
+
 }
 
 .box2 h1{
@@ -235,6 +226,7 @@ border: 1px solid #E1E1E1;
 box-sizing: border-box;
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
+animation: fadeIn 80s ;
 }
 
 .box3 h1{
@@ -267,6 +259,7 @@ border: 1px solid #E1E1E1;
 box-sizing: border-box;
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
+animation: fadeIn 120s;
 }
 
 .box4 h1{
@@ -298,6 +291,7 @@ border-radius: 8px;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 100px;
+	animation: fadeIn 160s ;
 }
 .finalbox h1{
 	position: absolute;
@@ -339,4 +333,13 @@ border-radius: 50%;
 background: rgba(255, 118, 0, 0.8);
 }
 
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+
+}
 
